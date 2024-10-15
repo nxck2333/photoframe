@@ -7,7 +7,7 @@ class Particle{
         startPos = new PVector();
         endPos = new PVector();
         currPos = new PVector();
-        co=color(random(0,255),random(0,255),random(0,255));
+        co=color(255,0,0);
     }
     void resetParticle(float x, float y){
         this.startPos.set(x,y,0);
@@ -54,7 +54,7 @@ class FireWorks{
             points.add(p);
         }
         explosionDuration=random(5000,8000);
-        isRandomColour=true;
+        isRandomColour=false;
         reset();
     }
     void reset(){
